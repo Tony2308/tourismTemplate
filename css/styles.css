@@ -1,0 +1,773 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Raleway', Arial, Helvetica;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+/* --------------------Large screens styling ----------------------------*/
+body{
+        background-color: #e5e5e5;;
+        color: #666;
+
+        }
+
+    header{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-image:linear-gradient(rgba(102,102,102,0.8),100%,transparent),url('../img/image3.jpg');
+        background-position-x: center;
+        background-position-y: top;
+        background-size: cover;
+        background-attachment: fixed,fixed;
+        z-index: 0;
+    } 
+
+    nav{
+        padding: 5px 20px;
+        min-height: 100px;
+        width: 100%;
+        background-color: black;
+        position: fixed;
+        top: 0;
+        }
+
+    /* styling toggle menu section */
+    .menu{
+        position: relative;
+        transition: 0.7s;
+        padding-top: 100px;
+        padding: 0;
+        margin: 0;
+        float: right;
+        right: 0;
+
+    }
+
+    .menu li{
+        display: inline-block;
+        padding: 0 10px;
+        margin: 0;
+        line-height: 50px;
+        font-size: 0.9em;
+        color: wheat;
+        list-style-type: none;
+        text-transform: uppercase;
+        cursor: pointer;
+        }
+
+    .menu li:hover {
+        color: teal;
+        transition: .4s;
+        }
+
+    #toggle, .show-menu, .hide-menu, .search{
+        display: none;
+        }
+
+    .logo{
+        float: left;
+        line-height: 50px;
+        cursor: pointer;
+        }
+
+    .logo a{
+        text-decoration: none;
+        color: wheat;
+        text-transform: uppercase;
+        font-size: 1.4em;
+        font-weight: 600;
+        }
+
+    .title{
+        margin-top: 150px;
+        align-self: center;
+        color: wheat;
+        font-size: 4em;
+        letter-spacing: 2px;
+        font-weight: 500;
+        }
+
+    .sub-title{
+        margin-top: 70px;
+        align-self: center;
+        letter-spacing: 2px;
+        line-height: 30px;
+        color: wheat;
+        width: 60%;
+        text-align: center;
+        font-weight: lighter;
+        font-size: 1.4em;
+        vertical-align: baseline;
+        text-transform: uppercase;
+        }
+    
+    .main-button{
+        margin-top: 160px;
+        width: auto;
+        height: 60px;
+        padding: 5px 10px;
+        font-size: x-large;
+        background-color: crimson;
+        color: wheat;
+        border-radius: 10px;
+        cursor: pointer;
+        }
+
+    .main-button:hover{
+        background-color: teal;
+        transform: scale(1.01);
+        border: transparent;
+        transition: .6s;
+        }
+
+    /* styling content areas */
+
+    .card{
+        color: #666;
+        padding: 3em 0 1em 0;
+        height: auto;
+        }
+
+    .card:nth-child(odd){
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-image:linear-gradient(rgba(102,102,102,0.8),100%,transparent),url('../img/image3.jpg');
+        background-position-x: center;
+        background-position-y: top;
+        background-size: cover;
+        background-attachment: fixed,fixed;
+        z-index: -1111;
+        color: wheat;
+        }
+
+    .card:nth-child(even){
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        z-index: -1111;
+        }
+
+    /* content  */
+    
+    .head h2{
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        }
+
+    .head h3{
+        margin-top: 10px;
+        line-height: 30px;
+        text-align: center;
+        font-weight: lighter;
+
+        }
+
+    .content{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        padding: 2em 1em;
+        flex-flow: row wrap;
+        }
+
+    .content p{
+        text-align:justify;
+        margin-top: 15px;
+        line-height: 35px;
+        font-size: 1.2em;
+        }
+
+    .content h3{
+        line-height: 50px;
+        }
+
+    .one,.two,.three,.four,.five{
+        color: inherit;
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2em 1em;
+        width: 100%;
+        }
+
+
+    section.card.one{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5em 2em;
+    }
+
+    section.card.one div.head{
+        width: max-content;
+    }
+    section.card.one div.head h2{
+        font-size: 3.6em;
+        font-weight: 400;
+    }
+    section.card.one div.head h3{
+        font-size: 1.5em;
+    }
+
+
+
+    section.card.one div.content{
+        width: 60%;
+    }
+
+    section .two{
+        background-color: rgb(246,246,246);
+        z-index: 1;
+        }
+    /* styling image cards */
+
+    section.card.two div.head h2{
+        font-size: 3em;
+        font-weight: 400;
+    }
+
+    .head{
+        text-align: center;
+        }
+
+    .image-card{
+        align-self: center;
+        width: 350px;
+        height: 450px;
+        background-color: #fff;
+        color: #666;
+        padding: 0;
+        margin-top: 20px;
+        border: px solid #666;
+        cursor: pointer;
+        }
+
+    .image-card:hover{
+        border: 3px solid crimson;
+        transition: 0.2s;
+    }    
+
+    .image-card img{
+        width: 100%;
+        height: 70%;
+        align-self: center;
+        
+        }
+
+    .image-card h5{
+        padding: 1em 1em;
+        text-align: center;
+        text-decoration: none;
+        }
+    .image-card a{
+        padding: 1em 1em;
+        text-align: center;
+        text-decoration: none;
+        color: inherit;
+        }
+    .image-card a:hover{
+       transition: .3s;
+        color: teal;
+        transform: scale(1.2);
+        }
+
+    .three{
+        display: block;
+        width: 100%S;
+        }
+
+    section.card.three div.head {
+        width: 100%;
+        padding: 4em 2em;
+        text-align: left;
+    }
+
+    section.card.three div.head.top h2 {
+        text-align: left;
+        font-size: 2.8em;
+    }
+    section.card.three div.head.top h3 {
+        line-height: 40px;
+        font-size: 1.6em;
+        text-align: left;
+    }
+
+
+    section.card.three div.card-wrapper div.content{
+        display: block;
+        text-align: right;
+    }
+
+    .content-wrapper{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content:center ;
+        width: 100%;
+        align-items: center;
+        flex-flow: row wrap;
+
+        }
+
+    .card-wrapper{
+        width: 50%;
+        height: auto;
+        display: flex;
+        padding: 2em 1.5em;
+        align-items: center;
+        }
+
+    .card-wrapper:nth-child(odd){
+        flex-flow:row-reverse ;
+        }
+
+   div.card-wrapper:nth-child(even) div.content h3{
+        text-align: left;
+        }
+
+    /* styling profile and people section */
+    .head img{
+        width: 150px;
+        height: 150px;
+        border: 4px solid wheat;
+        border-radius: 50%;
+        }
+
+    .four h1{
+        margin-top: 50px;
+        font-size: 3em;
+    }
+
+    .four button{
+        margin-top: 0;
+    }
+
+    section div div div span {
+        text-align: center;
+        margin-top: 4em 10px;
+        
+    }
+
+    section div div div span a{
+        text-align: center;
+        margin: 2em 10px;
+        color: inherit;
+    }
+
+    /* fooetr stylings */
+    footer{
+        width: 100%;  
+        height: 30vh;
+        background-color: wheat;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        }
+
+    .social{
+        align-self: center;
+
+        }
+
+    .social li{
+        display: inline;
+        margin-right:10px ;
+        }
+
+    footer i{
+        color: #666;
+        }
+
+    footer i:hover{
+        color: teal;
+        transition: .4s;
+        }
+
+    footer p{
+        width: 80%;
+        text-align: center;
+        font-size: 1.05em;
+        color:inherit;
+        }
+
+
+
+
+/*------------------------ fooetr stylings----------------*/
+    footer{
+        width: 100%;  
+        height: 30vh;
+        background-color: wheat;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        }
+
+    .social{
+        align-self: center;
+
+        }
+
+    .social li{
+        display: inline;
+        margin-right:10px ;
+        }
+
+    footer p{
+        align-self: center;
+        }
+
+
+
+/* -------------small screens first------------------ */
+
+@media screen and (max-width:680px){
+    /* Header */
+    header{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-image:linear-gradient(rgba(102,102,102,0.8),100%,transparent),url('../img/image3.jpg');
+        background-position-x: center;
+        background-position-y: top;
+        background-size: cover;
+        background-attachment: fixed,fixed;
+        z-index: 0;
+        } 
+    nav{
+        padding: 5px 20px;
+        min-height: 100px;
+        width: 100%;
+        background-color: black;
+        position: fixed;
+        top: 0;
+        }
+
+    /* styling toggle menu section */
+    .menu{
+        position: absolute;
+        background-color: black;
+        width: 70%;
+        height: 90vh;
+        padding: 0;
+        left: -100%;
+        transition: 0.7s;
+        top: 0;
+        z-index: 1111;
+        padding-top: 100px;
+
+    }
+
+    .menu li{
+        display: block;
+        padding: 1.2em 0.9em;
+        margin: 0;
+        line-height: 50px;
+        color: wheat;
+        list-style-type: none;
+        border-bottom:1px solid wheat;
+        text-transform: uppercase;
+        }
+
+    #toggle{
+        display: none;
+        }
+
+    #toggle:checked ~ .menu{
+        left: 0;
+        }
+
+    .show-menu {
+        display: block;
+        line-height: 50px;
+        cursor: pointer;
+
+        }
+
+    .fa-bars{
+        align-items: center;
+        color: wheat 
+        }
+
+    .hide-menu{
+        display: flex;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        width: 30px;
+        height: 30px;
+        background-color: #666;
+        color: wheat;
+        border-radius: 50%;
+        justify-content: center;
+        }
+
+    .hide-menu i{
+        align-self: center;
+
+        }
+
+    .logo{
+        float: right;
+        line-height: 50px;
+        cursor: pointer;
+
+        }
+
+    .logo a{
+        text-decoration: none;
+        color: wheat;
+        text-transform: uppercase;
+        font-size: 1em;
+        }
+
+    .card{
+        color: #666;
+        padding: 3em 0 1em 0;
+        height: auto;
+        }
+
+    .card:nth-child(odd){
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-image:linear-gradient(rgba(102,102,102,0.8),100%,transparent),url('../img/image3.jpg');
+        background-position-x: center;
+        background-position-y: top;
+        background-size: cover;
+        background-attachment: fixed,fixed;
+        z-index: -1111;
+        color: wheat;
+        }
+
+    .card:nth-child(even){
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        z-index: -1111;
+        }
+
+
+    /* content  */
+    .title{
+        margin-top: 100px;
+        align-self: center;
+        color: wheat;
+        font-size: 2.7em;
+        letter-spacing: 2px;
+        font-weight: 500;
+        initial-letter: 2;
+
+        }
+
+    .sub-title{
+        margin-top: 50px;
+        align-self: center;
+        letter-spacing: 2px;
+        line-height: 30px;
+        color: wheat;
+        width: 70%;
+        text-align: center;
+        font-weight: lighter;
+        font-size: 1em;
+        vertical-align: baseline;
+        text-transform: uppercase;
+        }
+
+    .main-button{
+        margin-top: 50px;
+        width: 170;
+        height: 60px;
+        padding: 10px;
+        font-size: x-large;
+        background-color: crimson;
+        color: wheat;
+        border-radius: 10px;
+        cursor: pointer;
+        }
+
+    .main-button:hover{
+        background-color: coral;
+        transform: scale(1.01);
+        border: transparent;
+        }
+
+    .head h2{
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        }
+
+    .head h3{
+        margin-top: 10px;
+        line-height: 30px;
+        }
+
+    .content{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        text-align: center;
+        padding: 2em 1em;
+        }
+
+    .content p{
+        max-width: 700px;
+        text-align:justify;
+        margin-top: 30px;
+        line-height: 25px;
+
+        }
+    .content h3{
+        line-height: 50px;
+        }
+
+    .one,.two,.three,.four,.five{
+        color: inherit;
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2em 1em;
+        width: 100%;
+        }
+
+        section.card.one{
+            flex-direction: column;
+
+        }
+    
+        section.card.one div.head{
+            width: 100%;
+        }
+    
+        section.card.one div.content{
+            width: 100%;
+        }
+
+    section .two{
+        background-color: rgb(246,246,246);
+        z-index: 1;
+        }
+
+        section.card.three div.content-wrapper div.head{
+            padding: 1em 0.5em;
+        }
+        div.card-wrapper:nth-child(even) div.content h3{
+            text-align: center;
+            }
+
+    /* styling image cards */
+
+    .head{
+        text-align: center;
+        }
+
+    .image-card{
+        align-self: center;
+        width: 100%;
+        background-color: #fff;
+        color: #666;
+        padding: 0;
+        margin-top: 20px;
+        border-radius: 10px;
+        }
+
+    .image-card img{
+        width: 100%;
+        height: 80%;
+        align-self: center;
+        }
+
+    .image-card p{
+        padding: 2em 1em;
+        }
+
+    .content-wrapper, .card-wrapper{
+        display: block;
+        width: 100%;
+        text-align: center;
+        }
+
+        section.card.three div.head {
+            width: 100%;
+            padding: 3em 1.5em;
+            text-align: center;
+        }
+        section.card.three div.card-wrapper div.content{
+            display: block;
+            text-align: center;
+        }
+    
+
+        /* styling profile and people section */
+    .head img{
+        width: 200px;
+        height: 200px;
+        border: 3px solid wheat;
+        border-radius: 50%;
+        }
+
+    .top{
+        margin-bottom: 50px;
+        }
+
+        /* fooetr stylings */
+    footer{
+        width: 100%;  
+        height: 30vh;
+        background-color: wheat;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        }
+
+    .social{
+        align-self: center;
+        padding: 3em 2em;
+        }
+
+    .social li{
+        display: inline;
+        margin-right:15px ;
+        }
+
+    footer i{
+        color: #666;
+        
+    }
+
+    footer p{
+        width: 80%;
+        text-align: center;
+        font-size: 0.87em;
+        color:inherit;
+        }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
